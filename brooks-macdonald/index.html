@@ -1,0 +1,178 @@
+<style scoped>
+	#banner-brooks-macdonald {
+		width:100%;
+		font-family: Helvetica, Arial, san-serif;
+	}
+	#banner-brooks-macdonald * {
+		box-sizing: border-box;
+	}
+	.brooks-macdonald__header {
+		width:100%;
+		padding: 20px;
+		background-color: #ececec;
+		/*background-image:url("images/home-banner.png");*/
+		background-image:url("http://www.adviserhome.co.uk/cd-content/uploads/images/home-banner.png");
+		background-repeat: no-repeat;
+		background-size:auto 100%;
+		background-position: 100% 100%;
+	}
+	.brooks-macdonald__logo {
+		width: 35%;
+		max-width: 180px;
+	}
+	.brooks-macdonald__title {
+		margin: 20px 0 !important;
+		font-weight: 500 !important;
+		color:#585858 !important;
+		font-size: 34px !important;
+		width:50%;
+	}
+	.brooks-macdonald__separate {
+		display: block;
+		width:100%;
+		height: 20px;
+		background-color: #a762a1; /*pink*/
+	}
+	.brooks-macdonald__offers {
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  		display: -ms-flexbox;  /* TWEENER - IE 10 */
+  		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  		display: flex; 
+	}
+	.brooks-macdonald__offer {
+		padding: 40px;
+		color:white;
+		text-align:center;
+	}
+	.brooks-macdonald__offer1 {
+		background-color: #3d5e82;
+		background-image:url("http://www.adviserhome.co.uk/cd-content/uploads/images/pound-bg.png");
+		background-repeat: no-repeat;
+		background-size:auto 100%;
+		background-position: 0 100%;
+	}
+	.brooks-macdonald__offer2 {
+		background-color: #0080b6;
+		background-image:url("http://www.adviserhome.co.uk/cd-content/uploads/images/property-bg.png");
+		background-repeat: no-repeat;
+		background-size:auto 100%;
+		background-position: 100% 100%;
+	}
+
+	.brooks-macdonald__offer--title,
+	.brooks-macdonald__offer--subtitle {
+		margin:0;
+		padding:0;
+	}
+	.brooks-macdonald__offer--title {
+		font-size: 20px !important;
+	}
+	.brooks-macdonald__offer--subtitle {
+		font-size: 26px !important;
+		font-weight: 700 !important;
+	}
+
+	.brooks-macdonald__offer--title {
+		font-weight: 100;
+	}
+
+	.brooks-macdonald__offer--text {
+		width: 85%;
+		font-size: .9em !important;
+		margin: 20px auto;
+		opacity: .9;
+	}
+	.brooks-macdonald__offer--link {
+		display: block;
+		margin: 20px auto;
+		padding: 10px 20px;
+		font-size: 1em !important;
+		width: 150px;
+		color:white;
+		text-decoration: none;
+		background-color: #a762a1;
+	}
+	.brooks-macdonald__footer {
+		width: 100%;
+		padding: 10px;
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  		display: -ms-flexbox;  /* TWEENER - IE 10 */
+  		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  		display: flex;
+  		background-color: #2d2d2d;
+  		align-items: center;
+  		-webkit-align-items: center;
+  		-webkit-justify-content: center;
+  		justify-content: center;
+	}
+	.brooks-macdonald__find-out {
+		font-weight: 500;
+		color: white;
+		font-size: 1em !important;
+		margin-right: 20px;
+	}
+	.brooks-macdonald__find-out-link {
+		color: white;
+		background-color: #0080b6;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 1em !important;
+		padding: 10px 20px;
+		border-radius: 10px;
+		text-align:center;
+	}
+
+	@media screen and (max-width: 640px) {
+		.brooks-macdonald__offers {
+			-webkit-flex-direction: column;
+					flex-direction: column;
+		}
+	}
+	@media screen and (max-width: 480px) {
+
+		.brooks-macdonald__header {
+			background-image:none;
+			text-align:center;
+		}
+		.brooks-macdonald__title {
+			width:100%;
+		}
+		.brooks-macdonald__find-out-link {
+			font-size:.75em !important;
+		}
+	}
+</style>
+
+<div id="banner-brooks-macdonald">
+	<div class="brooks-macdonald__header">
+		<a href="http://www.brooksmacdonald.com/" target="_blank"><img src="http://www.adviserhome.co.uk/cd-content/uploads/images/logo%281%29.png" class="brooks-macdonald__logo"></a>
+		<h1 class="brooks-macdonald__title">Focused Investment <br>Approach</h1>
+	</div>
+	<span class="brooks-macdonald__separate"></span>
+	<div class="brooks-macdonald__offers">
+		<div class="brooks-macdonald__offer1 brooks-macdonald__offer">
+			<div class="brooks-macdonald__offer1--wrap">
+				<h3 class="brooks-macdonald__offer--title">Brooks Macdonald</h3>
+				<span class="brooks-macdonald__offer--subtitle">Defensive capital fund</span>
+				<p class="brooks-macdonald__offer--text">
+					This fund aims to provide the stability of bonds while retaining an ability to benefit from any rise in equities. It seeks to generate long-term capital growth independent of equity market performance by investing in defensive assets, such as preference shares, convertible bonds and structured notes.
+				</p>
+				<a href="#" class="brooks-macdonald__offer--link" target="_blank">Find out more</a>
+			</div>
+		</div>
+		<div class="brooks-macdonald__offer2 brooks-macdonald__offer">
+			<h3 class="brooks-macdonald__offer--title">IFSL North Row</h3>
+			<span class="brooks-macdonald__offer--subtitle">Liquid Property Fund</span>
+			<p class="brooks-macdonald__offer--text">
+				A highly innovative property fund that offers investors liquid exposure to global real estate markets by synthetically recreating commercial property returns. A UCITS property fund, the fund aims to provide income and long-term capital gains.
+			</p>
+			<a href="#" class="brooks-macdonald__offer--link" target="_blank">Find out more</a>
+		</div>
+	</div>
+	<div class="brooks-macdonald__footer">
+		<div class="brooks-macdonald__find-out">For more detail, and webinars</div>
+		<a href="http://www.brooksmacdonald.com/investment-management/single-strategy-solutions" class="brooks-macdonald__find-out-link" target="_blank">Find out more</a>
+	</div>
+
+</div>
