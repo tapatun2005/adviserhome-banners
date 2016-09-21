@@ -1,0 +1,116 @@
+<style scoped>
+	
+	#transact__banner {
+		width:100%;
+		max-width: 575;
+		height:400px;
+		background-image: url(./images/main_bg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		-webkit-background-size: cover;
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  		display: -ms-flexbox;  /* TWEENER - IE 10 */
+  		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  		display: flex;
+	}
+
+	.transact__banner__section {
+		width:50%;
+		height: 100%;
+		position: relative;
+	}
+
+	.transact__banner__logo {
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%, -50%);
+		-webkit-transform:translate(-50%, -50%);
+		width: 100%;
+		text-align: center;
+	}
+		.transact__banner__logo img {
+			width:60%;
+		}
+	.transact__banner__links {
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%, -50%);
+		-webkit-transform:translate(-50%, -50%);
+		width: 100%;
+		text-align: center;
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  		display: -ms-flexbox;  /* TWEENER - IE 10 */
+  		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  		display: flex;
+  		flex-direction:column;
+  		-webkit-flex-direction:column;
+	}
+		.transact__banner__links a {
+			position: relative;
+			width: 75%;
+			color:white;
+			font-weight: 600;
+			text-decoration: none;
+			margin: 15px 0;
+			padding: 10px 20px;
+			border:2px solid rgba(255,255,255,.75);
+			border-radius: 7px;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006fc2+0,003966+100&0.65+0,0.65+100 */
+background: -moz-linear-gradient(top,  rgba(0,111,194,0.45) 0%, rgba(0,57,102,0.45) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,111,194,0.45) 0%,rgba(0,57,102,0.45) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,111,194,0.45) 0%,rgba(0,57,102,0.45) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6006fc2', endColorstr='#a6003966',GradientType=0 ); /* IE6-9 */
+		}
+
+		.transact__banner__links a:before {
+			content:"";
+			position: absolute;
+			display: block;
+			top:0;
+			left:0;
+			height: 100%;
+			width:100%;
+			background:green;
+			border-radius: 7px;
+			z-index: -1;
+			opacity: 0;
+			transition:opacity .2s ease-in-out;
+			-webkit-transition:opacity .2s ease-in-out;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006fc2+0,003966+100&0.65+0,0.65+100 */
+background: -moz-linear-gradient(top,  rgba(0,111,194,0.85) 0%, rgba(0,57,102,0.85) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,111,194,0.85) 0%,rgba(0,57,102,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,111,194,0.85) 0%,rgba(0,57,102,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6006fc2', endColorstr='#a6003966',GradientType=0 ); /* IE6-9 */
+		}
+			.transact__banner__links a:hover:before{
+				opacity: 1;
+			}
+
+</style>
+
+<div id="transact__banner">
+	<div class="transact__banner__section">
+		<a href="#" class="transact__banner__logo">
+			<img src="images/transact_log.png" alt="">
+		</a>
+	</div>
+	<div class="transact__banner__section">
+		<div class="transact__banner__links">
+			<a href="#">
+				Latest Developments
+			</a>
+			<a href="#">
+				Transact - No.1 for 7 years 
+			</a>
+			<a href="#">
+				See a Client Demo
+			</a>
+			<a href="#">
+				Request an Adviser Demo Login
+			</a>
+		</div>
+	</div>
+</div>
