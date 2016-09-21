@@ -1,8 +1,8 @@
 <style scoped>
 	
 	#transact__banner {
-		width:100%;
-		max-width: 575;
+		width:50%;
+		max-width: 575px;
 		height:400px;
 		background-image: url(./images/main_bg.jpg);
 		background-repeat: no-repeat;
@@ -89,15 +89,54 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6006fc2', e
 				opacity: 1;
 			}
 
+	@media screen and (max-width:991px) {
+		#transact__banner {
+			height: 300px;
+		}
+		.transact__banner__links a {
+			margin: 8px 0;
+		}
+
+		.transact__banner__section--1 {
+			width: 40%;
+		}
+		.transact__banner__section--2 {
+			width: 60%;
+		}
+	}
+	@media screen and (max-width:600px) {
+		#transact__banner {
+			width:100%;
+		}
+		.transact__banner__links a {
+			margin: 5px 0;
+			/*padding: 10px 5px;*/
+		}
+
+		.transact__banner__section--1 {
+			width: 40%;
+		}
+		.transact__banner__section--2 {
+			width: 60%;
+		}
+	}
+
+	@media screen and (max-width:480px) {
+		.transact__banner__links a {
+			/*margin: 5px 0;*/
+			padding: 10px 5px;
+		}
+	}
+
 </style>
 
 <div id="transact__banner">
-	<div class="transact__banner__section">
+	<div class="transact__banner__section transact__banner__section--1">
 		<a href="#" class="transact__banner__logo">
 			<img src="images/transact_log.png" alt="">
 		</a>
 	</div>
-	<div class="transact__banner__section">
+	<div class="transact__banner__section transact__banner__section--2">
 		<div class="transact__banner__links">
 			<a href="#">
 				Latest Developments
