@@ -4,7 +4,7 @@
 		width:50%;
 		max-width: 575px;
 		height:400px;
-		background-image: url(./images/main_bg.jpg);
+		background-image: url(/cd-content/uploads/images/main_bg.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		-webkit-background-size: cover;
@@ -12,12 +12,23 @@
   		display: -ms-flexbox;  /* TWEENER - IE 10 */
   		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   		display: flex;
+  		overflow: hidden;
 	}
 
 	.transact__banner__section {
-		width:50%;
+		/*width:50%;*/
 		height: 100%;
 		position: relative;
+	}
+
+	.transact__banner__section--1 {
+		width:60%;
+		background:black;
+	}
+
+	.transact__banner__section--2 {
+		width:40%;
+		background:#041423;
 	}
 
 	.transact__banner__logo {
@@ -28,9 +39,10 @@
 		-webkit-transform:translate(-50%, -50%);
 		width: 100%;
 		text-align: center;
+		transition: transform .35s linear;
 	}
 		.transact__banner__logo img {
-			width:60%;
+			width:100%;
 		}
 	.transact__banner__links {
 		position: absolute;
@@ -47,25 +59,34 @@
   		flex-direction:column;
   		-webkit-flex-direction:column;
 	}
-		.transact__banner__links a {
+		.transact__banner__link {
 			position: relative;
-			width: 75%;
+			font-size: .9em;
+			width: 90%;
 			color:white;
 			font-weight: 600;
 			text-decoration: none;
-			margin: 15px 0;
+			margin: 8px auto;
+			box-sizing: border-box;
 			padding: 10px 20px;
-			border:2px solid rgba(255,255,255,.75);
+			border:1px solid #02719f;
 			border-radius: 7px;
+			box-shadow: 0 0 10px #02719f;
 
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006fc2+0,003966+100&0.65+0,0.65+100 */
-background: -moz-linear-gradient(top,  rgba(0,111,194,0.45) 0%, rgba(0,57,102,0.45) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(0,111,194,0.45) 0%,rgba(0,57,102,0.45) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(0,111,194,0.45) 0%,rgba(0,57,102,0.45) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6006fc2', endColorstr='#a6003966',GradientType=0 ); /* IE6-9 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#29486a+0,00101b+100 */
+background: rgb(41,72,106); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(41,72,106,1) 0%, rgba(0,16,27,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(41,72,106,1) 0%,rgba(0,16,27,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(41,72,106,1) 0%,rgba(0,16,27,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29486a', endColorstr='#00101b',GradientType=0 ); /* IE6-9 */
+
 		}
 
-		.transact__banner__links a:before {
+		.transact__banner__link:hover {
+			color: #fff !important;
+		}
+
+		.transact__banner__link:before {
 			content:"";
 			position: absolute;
 			display: block;
@@ -85,70 +106,107 @@ background: -webkit-linear-gradient(top,  rgba(0,111,194,0.85) 0%,rgba(0,57,102,
 background: linear-gradient(to bottom,  rgba(0,111,194,0.85) 0%,rgba(0,57,102,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6006fc2', endColorstr='#a6003966',GradientType=0 ); /* IE6-9 */
 		}
-			.transact__banner__links a:hover:before{
+			.transact__banner__link:hover:before{
 				opacity: 1;
 			}
+
+
+	.transact__banner__link-image img {
+		width: 65%;
+		margin: 20px 0;
+	}
 
 	@media screen and (max-width:991px) {
 		#transact__banner {
 			height: 300px;
 		}
-		.transact__banner__links a {
-			margin: 8px 0;
+		.transact__banner__link {
+			margin: 5px auto;
+			font-size:.8em;
+		}
+
+		.transact__banner__link-image {
+			width:70%;
+			display: block;
+			margin: 0 auto;
 		}
 
 		.transact__banner__section--1 {
-			width: 40%;
+			width: 50%;
 		}
 		.transact__banner__section--2 {
+			width: 50%;
+		}
+	}
+
+	@media screen and (min-width: 601px) and (max-width:730px) {
+		.transact__banner__section--1 {
 			width: 60%;
+		}
+		.transact__banner__section--2 {
+			width: 40%;
+		}
+		.transact__banner__link {
+			padding: 5px;
 		}
 	}
 	@media screen and (max-width:600px) {
 		#transact__banner {
 			width:100%;
 		}
-		.transact__banner__links a {
-			margin: 5px 0;
+		.transact__banner__link {
+			margin: 5px auto;
 			/*padding: 10px 5px;*/
 		}
 
 		.transact__banner__section--1 {
-			width: 40%;
+			width: 60%;
 		}
 		.transact__banner__section--2 {
-			width: 60%;
+			width: 40%;
 		}
 	}
 
 	@media screen and (max-width:480px) {
-		.transact__banner__links a {
+		.transact__banner__link {
 			/*margin: 5px 0;*/
-			padding: 10px 5px;
+			padding: 5px 5px;
+		}
+
+		.transact__banner__section--1 {
+			width: 55%;
+		}
+		.transact__banner__section--2 {
+			width: 45%;
 		}
 	}
 
 </style>
 
+<p style="font-family: Arial, san-serif; font-size:14px;">Development Zone focused on Platforms - in association with Transact.</p>
+
 <div id="transact__banner">
 	<div class="transact__banner__section transact__banner__section--1">
-		<a href="#" class="transact__banner__logo">
-			<img src="images/transact_log.png" alt="">
+		<a href="https://www.transact-online.co.uk/faqs" class="transact__banner__logo" target="_blank">
+			<img src="http://www.adviserhome.co.uk/cd-content/uploads/images/text-image.jpg" alt="">
 		</a>
 	</div>
 	<div class="transact__banner__section transact__banner__section--2">
 		<div class="transact__banner__links">
-			<a href="#">
+			<a href="https://www.transact-online.co.uk/investor-authorisation" target="_blank" class="transact__banner__link">
 				Latest Developments
 			</a>
-			<a href="#">
+			<a href="https://www.transact-online.co.uk/investment-trends" class="transact__banner__link" target="_blank">
 				Transact - No.1 for 7 years 
 			</a>
-			<a href="#">
+			<a href="https://user.transact-online.co.uk/" class="transact__banner__link" target="_blank">
 				See a Client Demo
 			</a>
-			<a href="#">
+			<a href="https://www.transact-online.co.uk/request-a-demonstration" class="transact__banner__link" target="_blank">
 				Request an Adviser Demo Login
+			</a>
+			<a href="https://www.transact-online.co.uk/" class="transact__banner__link-image" target="_blank">
+				<img src="http://www.adviserhome.co.uk/cd-content/uploads/images/transact-logo.png" alt="">
 			</a>
 		</div>
 	</div>
