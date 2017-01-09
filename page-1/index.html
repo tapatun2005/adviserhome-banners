@@ -1,0 +1,168 @@
+<style scoped>
+
+	.clever__green__block {
+		display: block;
+		margin: 40px 0;
+		padding: 40px 40px;
+		background:#a3c732;
+		font-size: 18px !important;
+		color: #fff !important;
+		font-weight: 700 !important;
+	}
+
+	.clever__flex {
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  		display: -ms-flexbox;  /* TWEENER - IE 10 */
+  		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  		display: flex;
+  		-webkit-align-items: center;
+  				align-items: center;
+  		/*-webkit-justify-content:space-between;*/
+  				/*justify-content:space-between;*/
+  		margin-bottom: 50px;
+	}
+
+	.clever__flex--left {
+		margin-right:40px;
+	}
+
+	.clever__flex--right {
+		max-width: 450px;
+	}
+
+	.clever__flex--left img {
+		width: 160px;
+		max-width: none !important;
+	}
+	.clever__flex--title {
+		font-size: 1.4em;
+		font-weight: 700;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+		display: block;
+	}
+
+	.clever__flex--p {
+		padding: 20px 0;
+	}
+
+	.clever__flex--link {
+		display: block;
+		width: 100px;
+		padding: 10px 20px;
+		text-align:center;
+		color:#fff !important;
+		text-decoration: none !important;
+		background:#5d7b00;
+		border-radius: 5px;
+		font-size: 16px !important;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.clever__flex--button {
+		display: block;
+		/*width: 200px;*/
+		padding: 25px 20px;
+		text-align:center;
+		color:#fff !important;
+		text-decoration: none !important;
+		background:#a3c732;
+		border-radius: 5px;
+		font-size: 16px !important;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.clever__flex--link:hover  {
+		color:#fff !important;
+		text-decoration: none !important;
+	}
+
+	.page__clever p {
+		font-size:14px !important;
+	}
+
+	.clever__book {
+		margin-bottom: 100px;
+	}
+
+	@media screen and (max-width: 420px) {
+		.clever__flex {
+			flex-direction:column;
+			justify-content: center;
+
+			-webkit-flex-direction:column;
+			-webkit-justify-content: center;
+			text-align: center;
+		}
+		.clever__flex--left {
+			margin-right:0px;
+			margin-bottom: 20px;
+		}
+		.clever__flex--link {
+			width: 100%;
+		}
+	}
+
+</style>
+
+<div class="page__clever">
+	
+	<p>
+		This is our latest Development Zone - for all advisers thinking about the competing attractions of in house solutions, model portfolios, external DFMs and other ways to best create and manage your client investment solutions.
+	</p>
+
+	<p class="clever__green__block">
+		The important point is that no matter how you organise your investment solutions the accountability rests with the adviser practice. The regulator is ever more concerned to see the due diligence carried out by advisers and this applies equally whether client portfolios are constructed in house or delegated to an external DFM.
+	</p>
+
+
+	<div class="clever__flex">
+		<div class="clever__flex--left">
+			<img src="/cd-content/uploads/images/pdf-1.png" alt="">
+		</div>
+		<div class="clever__flex--right">
+			<span class="clever__flex--title">Developing your Centralised Investment Proposition</span>
+			<p class="clever__flex--p">
+				This document from Clever Adviser Technology Ltd, in association with two Professors of Finance at Cass Business School, gives a good outline of the issues involved.
+			</p>
+			<a href="http://www.adviserhome.co.uk/cd-content/uploads/files/Summary%20paper%20-%20CIP%20-%20Joined%20Up%20Investment%20Thinking.pdf" target="_blank" class="clever__flex--link">Read</a>
+		</div>
+	</div>
+
+	<div class="clever__flex">
+		<div class="clever__flex--left">
+			<img src="/cd-content/uploads/images/pdf-2.png" alt="">
+		</div>
+		<div class="clever__flex--right">
+			<span class="clever__flex--title">How to manage the process?</span>
+			<p class="clever__flex--p">
+				A great piece here from the US - how to build your own Investment Committee - a practical guide.
+			</p>
+			<a href="http://www.am-a.com/pdf/white-papers/wp_investment_committees_2010.pdf" target="_blank" class="clever__flex--link">View</a>
+		</div>
+	</div>
+
+	<div class="clever__flex">
+		<div class="clever__flex--left">
+			<img src="/cd-content/uploads/images/pdf-4.png" alt="">
+		</div>
+		<div class="clever__flex--right">
+			<span class="clever__flex--title">Key considerations - how investors behave?</span>
+			<p class="clever__flex--p">
+				Take a look at this brief blog on Behavioural Finance - an excellent non-technical starter piece on this important subject.
+			</p>
+			<a href="https://www.cleveradviser.com/7-things-human-emotions-have-ruined-throughout-history/" target="_blank" class="clever__flex--link">Read</a>
+		</div>
+	</div>
+
+	<div class="clever__book">
+		<span class="clever__flex--title">Want to hear more - book your demo now</span>
+		<p class="clever__flex--p">
+			We work with Clever Adviser Technology Ltd, who have long experience of helping advisers develop sustained investment success for their clients. Their robust approach to creating and managing investment portfolios is supported by two Professors of Finance at Cass Business School. If you are open to ideas on new ways to create portfolios whilst retaining control within your adviser practice, then a brief demo might be a good place to start. 
+		</p>
+		<a href="http://www.cleveradviser.com/category/behavioural-finance/" target="_blank" class="clever__flex--button">Book a demo now</a>
+	</div>
+
+
+</div>

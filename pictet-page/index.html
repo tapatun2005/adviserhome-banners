@@ -1,0 +1,711 @@
+<style scoped>
+
+	.pictet--page__wrap {
+		display: block;
+		position: relative;
+		width:100%;
+		font-family: "Helvetica Neue","Helvetica", "Arial", san-serif;
+		color:#444444;
+		margin: 40px 0;
+	}
+
+	.pictet--page__wrap, .pictet--page__wrap * {
+		box-sizing: border-box;
+	}
+
+	.pictet--page__header {
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  		display: -ms-flexbox;  /* TWEENER - IE 10 */
+  		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  		display: flex;
+  		-webkit-align-items: center;
+  				align-items: center;
+
+  		background: #efefed;
+  		padding: 10px;
+  		margin-bottom: 20px;
+	}
+	.pictet--page__header img {
+		margin-right: 15px;
+		width: 45px;
+	}
+	.pictet--page__header span {
+		font-weight: 700;
+		font-size: 32px;
+	}
+
+	.pictet--page__list {
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  		display: -ms-flexbox;  /* TWEENER - IE 10 */
+  		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  		display: flex;
+  		-webkit-align-items: center;
+  				align-items: center;
+  		list-style:none;
+  		margin-left:0;
+  		padding-left:0;
+  		flex-wrap:wrap;
+  		-webkit-flex-wrap:wrap;
+  		justify-content: space-around;
+  		-webkit-justify-content: space-around;
+	}
+
+	.pictet--page__item {
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  		display: -ms-flexbox;  /* TWEENER - IE 10 */
+  		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  		display: flex;
+  		/*justify-content: space-between;*/
+  		/*-webkit-justify-content: space-between;*/
+  		background: #efefed;
+  		width: 45%;
+  		padding: 20px;
+  		border-top:10px solid #9c0d0d;
+  		margin-bottom: 20px;
+	}
+
+	@media screen and (max-width: 650px) {
+		.pictet--page__item {
+			width: 100%;
+		}
+	}
+
+	.pictet--page__svg--person {
+		margin-right: 20px;
+	}
+
+	.pictet--page__svg--person svg {
+		width: 40px; 
+		height: 40px;
+	}
+
+	.pictet--page__info--person {
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  		display: -ms-flexbox;  /* TWEENER - IE 10 */
+  		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  		display: flex;
+  		flex-direction:column;
+  		-webkit-flex-direction:column;
+	}
+
+	.pictet--page__info--person--names span {
+		display: block;
+	}
+
+	.pictet--page__name {
+		font-weight: 700;
+		font-size: 18px;
+		color:#444444;
+	}
+
+	.pictet--page__role {
+		font-size: 14px;
+		opacity: .65;
+	}
+
+	.pictet--page__info--person--contacts {
+		margin-top: 25px;
+	}
+
+	.pictet--page__info--person--phone {
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  		display: -ms-flexbox;  /* TWEENER - IE 10 */
+  		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  		display: flex;
+  		align-items: center;
+  		-webkit-align-items: center;
+	}
+
+	.pictet--page__info--person--phone--icon {
+		margin-right: 15px;
+	}
+	.pictet--page__info--person--email--icon {
+		margin-right: 15px;
+	}
+
+	.pictet--page__info--person--phone--icon, .pictet--page__info--person--email--icon {
+		width: 20px;
+	}
+
+	.pictet--page__info--person--phone--icon svg {
+		width: 13px;
+		height: 20px;
+	}
+	.pictet--page__info--person--email--icon svg {
+		width: 20px;
+		height: 30px;
+	}
+
+	.pictet--page__link {
+		text-decoration: none !important;
+		color:#444444 !important;
+	}
+
+
+/*#efefed*/
+</style>
+
+<div class="pictet--page__wrap">
+	<div class="pictet--page__header">
+		<img src="/cd-content/uploads/images/pictet%281%29.png" alt="">
+		<span>Making contact with Pictet</span>
+	</div>
+	<ul class="pictet--page__list">
+		
+	<!-- PERSON -->
+		<li class="pictet--page__item">
+			
+			<div class="pictet--page__svg--person">
+				<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+					<svg version="1.1"
+						 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+						 x="0px" y="0px" width="96.4px" height="100px" viewBox="0 0 96.4 100" style="enable-background:new 0 0 96.4 100;"
+						 xml:space="preserve">
+					<defs>
+					</defs>
+					<g>
+						<path style="fill:#cccbca;" d="M28.2,46.3c0,0,0.4,6.6,6.5,13.7v0c1.3,1.6,6.3,7.1,12.9,7.3c4.9,0.2,9.8-2.5,14.5-7.9l0,0c5.6-6.8,6-13.1,6-13.1
+							s3.3,0.6,5.1-7.3c1.8-7.9-1.8-6.1-1.8-6.1c4.8-25-14.7-31.8-14.7-31.8c-3.6-1.1-6.4-1.2-8.5-1c-2.1-0.2-5-0.1-8.5,1
+							c0,0-19.5,6.8-14.7,31.8c0,0-3.7-1.8-1.8,6.1C24.9,46.8,28.2,46.3,28.2,46.3z"/>
+						<path style="fill:#cccbca;" d="M96.3,92c-4-10.7-10.5-12.7-15.6-13.6c-5.1-0.9-17.6-4-18.7-7c-0.4-1-0.5-2.9-0.5-5c-4.3,3.6-8.8,5.5-13.4,5.5
+							c-0.3,0-0.5,0-0.8,0c-5.2-0.2-9.5-2.8-12.4-5.2c0,2-0.1,3.8-0.5,4.8c-1.1,2.9-13.6,6.1-18.7,7C10.6,79.3,4.2,81.4,0.1,92
+							C-3.9,102.7,100.4,102.7,96.3,92z"/>
+					</g>
+					</svg>
+			</div>
+			
+			<div class="pictet--page__info--person">
+				<div class="pictet--page__info--person--names">
+					<span class="pictet--page__name">Wendy Appleton</span>
+					<span class="pictet--page__role">Head of Sales - UK</span>
+				</div>
+				<div class="pictet--page__info--person--contacts">
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--phone--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="33.4px" height="60px" viewBox="0 0 33.4 60" style="enable-background:new 0 0 33.4 60;"
+								 xml:space="preserve">
+							<defs>
+							</defs>
+							<path style="fill:#5a5a5a" d="M30.9,0H2.5C1.1,0,0,1.1,0,2.5v55C0,58.9,1.1,60,2.5,60h28.4c1.4,0,2.5-1.1,2.5-2.5v-55C33.4,1.1,32.3,0,30.9,0z M16.7,56.8
+								c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S17.8,56.8,16.7,56.8z M29.7,49.1H3.8V11.6h25.9C29.7,11.6,29.7,49.1,29.7,49.1z"/>
+							</svg>
+						</span>
+						<a class="pictet--page__link" href="tel:02078475296" target="_blank">020 7847 5296</a>
+					</div>
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--email--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="88px" height="52px" viewBox="0 0 88 52" style="enable-background:new 0 0 88 52;" xml:space="preserve">
+							<defs>
+							</defs>
+							<g transform="translate(0,-952.36218)">
+								<path style="fill:#5a5a5a" d="M6,952.4c-0.6,0-1.2,0.1-1.8,0.3l36.9,34.5c1.7,1.6,4.2,1.6,5.9,0l36.8-34.5c-0.6-0.2-1.2-0.3-1.8-0.3H6z M1,955.1
+									c-0.6,0.9-1,2.1-1,3.3v40c0,1.2,0.4,2.3,1,3.2l24.3-23.8L1,955.1z M87,955.1l-24.3,22.8l24.3,23.8c0.6-0.9,1-2,1-3.2v-40
+									C88,957.1,87.6,956,87,955.1z M28.2,980.6L4.2,1004c0.6,0.2,1.2,0.3,1.8,0.3h76c0.6,0,1.3-0.1,1.8-0.3l-24-23.5L49.7,990
+									c-3.2,3-8.2,3-11.4,0L28.2,980.6L28.2,980.6z"/>
+							</g>
+							</svg>
+
+						</span>
+						<a href="mailto:wappleton@pictet.com" class="pictet--page__link" target="_blank">wappleton@pictet.com</a>
+					</div>
+				</div>
+			</div>
+		</li>
+
+	<!-- END -->
+
+
+	<!-- PERSON -->
+		<li class="pictet--page__item">
+			
+			<div class="pictet--page__svg--person">
+				<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+					<svg version="1.1"
+						 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+						 x="0px" y="0px" width="96.4px" height="100px" viewBox="0 0 96.4 100" style="enable-background:new 0 0 96.4 100;"
+						 xml:space="preserve">
+					<defs>
+					</defs>
+					<g>
+						<path style="fill:#cccbca;" d="M28.2,46.3c0,0,0.4,6.6,6.5,13.7v0c1.3,1.6,6.3,7.1,12.9,7.3c4.9,0.2,9.8-2.5,14.5-7.9l0,0c5.6-6.8,6-13.1,6-13.1
+							s3.3,0.6,5.1-7.3c1.8-7.9-1.8-6.1-1.8-6.1c4.8-25-14.7-31.8-14.7-31.8c-3.6-1.1-6.4-1.2-8.5-1c-2.1-0.2-5-0.1-8.5,1
+							c0,0-19.5,6.8-14.7,31.8c0,0-3.7-1.8-1.8,6.1C24.9,46.8,28.2,46.3,28.2,46.3z"/>
+						<path style="fill:#cccbca;" d="M96.3,92c-4-10.7-10.5-12.7-15.6-13.6c-5.1-0.9-17.6-4-18.7-7c-0.4-1-0.5-2.9-0.5-5c-4.3,3.6-8.8,5.5-13.4,5.5
+							c-0.3,0-0.5,0-0.8,0c-5.2-0.2-9.5-2.8-12.4-5.2c0,2-0.1,3.8-0.5,4.8c-1.1,2.9-13.6,6.1-18.7,7C10.6,79.3,4.2,81.4,0.1,92
+							C-3.9,102.7,100.4,102.7,96.3,92z"/>
+					</g>
+					</svg>
+			</div>
+			
+			<div class="pictet--page__info--person">
+				<div class="pictet--page__info--person--names">
+					<span class="pictet--page__name">Arabella Turner</span>
+					<span class="pictet--page__role">Discretionary Sales - London</span>
+				</div>
+				<div class="pictet--page__info--person--contacts">
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--phone--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="33.4px" height="60px" viewBox="0 0 33.4 60" style="enable-background:new 0 0 33.4 60;"
+								 xml:space="preserve">
+							<defs>
+							</defs>
+							<path style="fill:#5a5a5a" d="M30.9,0H2.5C1.1,0,0,1.1,0,2.5v55C0,58.9,1.1,60,2.5,60h28.4c1.4,0,2.5-1.1,2.5-2.5v-55C33.4,1.1,32.3,0,30.9,0z M16.7,56.8
+								c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S17.8,56.8,16.7,56.8z M29.7,49.1H3.8V11.6h25.9C29.7,11.6,29.7,49.1,29.7,49.1z"/>
+							</svg>
+						</span>
+						<a class="pictet--page__link" href="tel:02078476443" target="_blank">020 7847 6443</a>
+					</div>
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--email--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="88px" height="52px" viewBox="0 0 88 52" style="enable-background:new 0 0 88 52;" xml:space="preserve">
+							<defs>
+							</defs>
+							<g transform="translate(0,-952.36218)">
+								<path style="fill:#5a5a5a" d="M6,952.4c-0.6,0-1.2,0.1-1.8,0.3l36.9,34.5c1.7,1.6,4.2,1.6,5.9,0l36.8-34.5c-0.6-0.2-1.2-0.3-1.8-0.3H6z M1,955.1
+									c-0.6,0.9-1,2.1-1,3.3v40c0,1.2,0.4,2.3,1,3.2l24.3-23.8L1,955.1z M87,955.1l-24.3,22.8l24.3,23.8c0.6-0.9,1-2,1-3.2v-40
+									C88,957.1,87.6,956,87,955.1z M28.2,980.6L4.2,1004c0.6,0.2,1.2,0.3,1.8,0.3h76c0.6,0,1.3-0.1,1.8-0.3l-24-23.5L49.7,990
+									c-3.2,3-8.2,3-11.4,0L28.2,980.6L28.2,980.6z"/>
+							</g>
+							</svg>
+
+						</span>
+						<a href="mailto:arturner@pictet.com" class="pictet--page__link" target="_blank">arturner@pictet.com</a>
+					</div>
+				</div>
+			</div>
+		</li>
+
+	<!-- END -->
+
+	<!-- PERSON -->
+		<li class="pictet--page__item">
+			
+			<div class="pictet--page__svg--person">
+				<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+					<svg version="1.1"
+						 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+						 x="0px" y="0px" width="96.4px" height="100px" viewBox="0 0 96.4 100" style="enable-background:new 0 0 96.4 100;"
+						 xml:space="preserve">
+					<defs>
+					</defs>
+					<g>
+						<path style="fill:#cccbca;" d="M28.2,46.3c0,0,0.4,6.6,6.5,13.7v0c1.3,1.6,6.3,7.1,12.9,7.3c4.9,0.2,9.8-2.5,14.5-7.9l0,0c5.6-6.8,6-13.1,6-13.1
+							s3.3,0.6,5.1-7.3c1.8-7.9-1.8-6.1-1.8-6.1c4.8-25-14.7-31.8-14.7-31.8c-3.6-1.1-6.4-1.2-8.5-1c-2.1-0.2-5-0.1-8.5,1
+							c0,0-19.5,6.8-14.7,31.8c0,0-3.7-1.8-1.8,6.1C24.9,46.8,28.2,46.3,28.2,46.3z"/>
+						<path style="fill:#cccbca;" d="M96.3,92c-4-10.7-10.5-12.7-15.6-13.6c-5.1-0.9-17.6-4-18.7-7c-0.4-1-0.5-2.9-0.5-5c-4.3,3.6-8.8,5.5-13.4,5.5
+							c-0.3,0-0.5,0-0.8,0c-5.2-0.2-9.5-2.8-12.4-5.2c0,2-0.1,3.8-0.5,4.8c-1.1,2.9-13.6,6.1-18.7,7C10.6,79.3,4.2,81.4,0.1,92
+							C-3.9,102.7,100.4,102.7,96.3,92z"/>
+					</g>
+					</svg>
+			</div>
+			
+			<div class="pictet--page__info--person">
+				<div class="pictet--page__info--person--names">
+					<span class="pictet--page__name">Alonso Caro</span>
+					<span class="pictet--page__role">Discretionary Sales - London</span>
+				</div>
+				<div class="pictet--page__info--person--contacts">
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--phone--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="33.4px" height="60px" viewBox="0 0 33.4 60" style="enable-background:new 0 0 33.4 60;"
+								 xml:space="preserve">
+							<defs>
+							</defs>
+							<path style="fill:#5a5a5a" d="M30.9,0H2.5C1.1,0,0,1.1,0,2.5v55C0,58.9,1.1,60,2.5,60h28.4c1.4,0,2.5-1.1,2.5-2.5v-55C33.4,1.1,32.3,0,30.9,0z M16.7,56.8
+								c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S17.8,56.8,16.7,56.8z M29.7,49.1H3.8V11.6h25.9C29.7,11.6,29.7,49.1,29.7,49.1z"/>
+							</svg>
+						</span>
+						<a class="pictet--page__link" href="tel:02078476432" target="_blank">020 7847 6432</a>
+					</div>
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--email--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="88px" height="52px" viewBox="0 0 88 52" style="enable-background:new 0 0 88 52;" xml:space="preserve">
+							<defs>
+							</defs>
+							<g transform="translate(0,-952.36218)">
+								<path style="fill:#5a5a5a" d="M6,952.4c-0.6,0-1.2,0.1-1.8,0.3l36.9,34.5c1.7,1.6,4.2,1.6,5.9,0l36.8-34.5c-0.6-0.2-1.2-0.3-1.8-0.3H6z M1,955.1
+									c-0.6,0.9-1,2.1-1,3.3v40c0,1.2,0.4,2.3,1,3.2l24.3-23.8L1,955.1z M87,955.1l-24.3,22.8l24.3,23.8c0.6-0.9,1-2,1-3.2v-40
+									C88,957.1,87.6,956,87,955.1z M28.2,980.6L4.2,1004c0.6,0.2,1.2,0.3,1.8,0.3h76c0.6,0,1.3-0.1,1.8-0.3l-24-23.5L49.7,990
+									c-3.2,3-8.2,3-11.4,0L28.2,980.6L28.2,980.6z"/>
+							</g>
+							</svg>
+
+						</span>
+						<a href="mailto:acaro@pictet.com" class="pictet--page__link" target="_blank">acaro@pictet.com</a>
+					</div>
+				</div>
+			</div>
+		</li>
+
+	<!-- END -->
+
+	<!-- PERSON -->
+		<li class="pictet--page__item">
+			
+			<div class="pictet--page__svg--person">
+				<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+					<svg version="1.1"
+						 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+						 x="0px" y="0px" width="96.4px" height="100px" viewBox="0 0 96.4 100" style="enable-background:new 0 0 96.4 100;"
+						 xml:space="preserve">
+					<defs>
+					</defs>
+					<g>
+						<path style="fill:#cccbca;" d="M28.2,46.3c0,0,0.4,6.6,6.5,13.7v0c1.3,1.6,6.3,7.1,12.9,7.3c4.9,0.2,9.8-2.5,14.5-7.9l0,0c5.6-6.8,6-13.1,6-13.1
+							s3.3,0.6,5.1-7.3c1.8-7.9-1.8-6.1-1.8-6.1c4.8-25-14.7-31.8-14.7-31.8c-3.6-1.1-6.4-1.2-8.5-1c-2.1-0.2-5-0.1-8.5,1
+							c0,0-19.5,6.8-14.7,31.8c0,0-3.7-1.8-1.8,6.1C24.9,46.8,28.2,46.3,28.2,46.3z"/>
+						<path style="fill:#cccbca;" d="M96.3,92c-4-10.7-10.5-12.7-15.6-13.6c-5.1-0.9-17.6-4-18.7-7c-0.4-1-0.5-2.9-0.5-5c-4.3,3.6-8.8,5.5-13.4,5.5
+							c-0.3,0-0.5,0-0.8,0c-5.2-0.2-9.5-2.8-12.4-5.2c0,2-0.1,3.8-0.5,4.8c-1.1,2.9-13.6,6.1-18.7,7C10.6,79.3,4.2,81.4,0.1,92
+							C-3.9,102.7,100.4,102.7,96.3,92z"/>
+					</g>
+					</svg>
+			</div>
+			
+			<div class="pictet--page__info--person">
+				<div class="pictet--page__info--person--names">
+					<span class="pictet--page__name">Paul Bowen</span>
+					<span class="pictet--page__role">Sales Manager - UK North</span>
+				</div>
+				<div class="pictet--page__info--person--contacts">
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--phone--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="33.4px" height="60px" viewBox="0 0 33.4 60" style="enable-background:new 0 0 33.4 60;"
+								 xml:space="preserve">
+							<defs>
+							</defs>
+							<path style="fill:#5a5a5a" d="M30.9,0H2.5C1.1,0,0,1.1,0,2.5v55C0,58.9,1.1,60,2.5,60h28.4c1.4,0,2.5-1.1,2.5-2.5v-55C33.4,1.1,32.3,0,30.9,0z M16.7,56.8
+								c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S17.8,56.8,16.7,56.8z M29.7,49.1H3.8V11.6h25.9C29.7,11.6,29.7,49.1,29.7,49.1z"/>
+							</svg>
+						</span>
+						<a class="pictet--page__link" href="tel:07850311493" target="_blank">07850 311 493</a>
+					</div>
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--email--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="88px" height="52px" viewBox="0 0 88 52" style="enable-background:new 0 0 88 52;" xml:space="preserve">
+							<defs>
+							</defs>
+							<g transform="translate(0,-952.36218)">
+								<path style="fill:#5a5a5a" d="M6,952.4c-0.6,0-1.2,0.1-1.8,0.3l36.9,34.5c1.7,1.6,4.2,1.6,5.9,0l36.8-34.5c-0.6-0.2-1.2-0.3-1.8-0.3H6z M1,955.1
+									c-0.6,0.9-1,2.1-1,3.3v40c0,1.2,0.4,2.3,1,3.2l24.3-23.8L1,955.1z M87,955.1l-24.3,22.8l24.3,23.8c0.6-0.9,1-2,1-3.2v-40
+									C88,957.1,87.6,956,87,955.1z M28.2,980.6L4.2,1004c0.6,0.2,1.2,0.3,1.8,0.3h76c0.6,0,1.3-0.1,1.8-0.3l-24-23.5L49.7,990
+									c-3.2,3-8.2,3-11.4,0L28.2,980.6L28.2,980.6z"/>
+							</g>
+							</svg>
+
+						</span>
+						<a href="mailto:pbowen@pictet.com" class="pictet--page__link" target="_blank">pbowen@pictet.com</a>
+					</div>
+				</div>
+			</div>
+		</li>
+
+	<!-- END -->
+
+
+	<!-- PERSON -->
+		<li class="pictet--page__item">
+			
+			<div class="pictet--page__svg--person">
+				<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+					<svg version="1.1"
+						 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+						 x="0px" y="0px" width="96.4px" height="100px" viewBox="0 0 96.4 100" style="enable-background:new 0 0 96.4 100;"
+						 xml:space="preserve">
+					<defs>
+					</defs>
+					<g>
+						<path style="fill:#cccbca;" d="M28.2,46.3c0,0,0.4,6.6,6.5,13.7v0c1.3,1.6,6.3,7.1,12.9,7.3c4.9,0.2,9.8-2.5,14.5-7.9l0,0c5.6-6.8,6-13.1,6-13.1
+							s3.3,0.6,5.1-7.3c1.8-7.9-1.8-6.1-1.8-6.1c4.8-25-14.7-31.8-14.7-31.8c-3.6-1.1-6.4-1.2-8.5-1c-2.1-0.2-5-0.1-8.5,1
+							c0,0-19.5,6.8-14.7,31.8c0,0-3.7-1.8-1.8,6.1C24.9,46.8,28.2,46.3,28.2,46.3z"/>
+						<path style="fill:#cccbca;" d="M96.3,92c-4-10.7-10.5-12.7-15.6-13.6c-5.1-0.9-17.6-4-18.7-7c-0.4-1-0.5-2.9-0.5-5c-4.3,3.6-8.8,5.5-13.4,5.5
+							c-0.3,0-0.5,0-0.8,0c-5.2-0.2-9.5-2.8-12.4-5.2c0,2-0.1,3.8-0.5,4.8c-1.1,2.9-13.6,6.1-18.7,7C10.6,79.3,4.2,81.4,0.1,92
+							C-3.9,102.7,100.4,102.7,96.3,92z"/>
+					</g>
+					</svg>
+			</div>
+			
+			<div class="pictet--page__info--person">
+				<div class="pictet--page__info--person--names">
+					<span class="pictet--page__name">Emma Stenzel</span>
+					<span class="pictet--page__role">Sales Manager - UK South</span>
+				</div>
+				<div class="pictet--page__info--person--contacts">
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--phone--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="33.4px" height="60px" viewBox="0 0 33.4 60" style="enable-background:new 0 0 33.4 60;"
+								 xml:space="preserve">
+							<defs>
+							</defs>
+							<path style="fill:#5a5a5a" d="M30.9,0H2.5C1.1,0,0,1.1,0,2.5v55C0,58.9,1.1,60,2.5,60h28.4c1.4,0,2.5-1.1,2.5-2.5v-55C33.4,1.1,32.3,0,30.9,0z M16.7,56.8
+								c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S17.8,56.8,16.7,56.8z M29.7,49.1H3.8V11.6h25.9C29.7,11.6,29.7,49.1,29.7,49.1z"/>
+							</svg>
+						</span>
+						<a class="pictet--page__link" href="tel:02078476406" target="_blank">020 7847 6406</a>
+					</div>
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--email--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="88px" height="52px" viewBox="0 0 88 52" style="enable-background:new 0 0 88 52;" xml:space="preserve">
+							<defs>
+							</defs>
+							<g transform="translate(0,-952.36218)">
+								<path style="fill:#5a5a5a" d="M6,952.4c-0.6,0-1.2,0.1-1.8,0.3l36.9,34.5c1.7,1.6,4.2,1.6,5.9,0l36.8-34.5c-0.6-0.2-1.2-0.3-1.8-0.3H6z M1,955.1
+									c-0.6,0.9-1,2.1-1,3.3v40c0,1.2,0.4,2.3,1,3.2l24.3-23.8L1,955.1z M87,955.1l-24.3,22.8l24.3,23.8c0.6-0.9,1-2,1-3.2v-40
+									C88,957.1,87.6,956,87,955.1z M28.2,980.6L4.2,1004c0.6,0.2,1.2,0.3,1.8,0.3h76c0.6,0,1.3-0.1,1.8-0.3l-24-23.5L49.7,990
+									c-3.2,3-8.2,3-11.4,0L28.2,980.6L28.2,980.6z"/>
+							</g>
+							</svg>
+
+						</span>
+						<a href="mailto:estenzel@pictet.com" class="pictet--page__link" target="_blank">estenzel@pictet.com</a>
+					</div>
+				</div>
+			</div>
+		</li>
+
+	<!-- END -->
+
+	<!-- PERSON -->
+		<li class="pictet--page__item">
+			
+			<div class="pictet--page__svg--person">
+				<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+					<svg version="1.1"
+						 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+						 x="0px" y="0px" width="96.4px" height="100px" viewBox="0 0 96.4 100" style="enable-background:new 0 0 96.4 100;"
+						 xml:space="preserve">
+					<defs>
+					</defs>
+					<g>
+						<path style="fill:#cccbca;" d="M28.2,46.3c0,0,0.4,6.6,6.5,13.7v0c1.3,1.6,6.3,7.1,12.9,7.3c4.9,0.2,9.8-2.5,14.5-7.9l0,0c5.6-6.8,6-13.1,6-13.1
+							s3.3,0.6,5.1-7.3c1.8-7.9-1.8-6.1-1.8-6.1c4.8-25-14.7-31.8-14.7-31.8c-3.6-1.1-6.4-1.2-8.5-1c-2.1-0.2-5-0.1-8.5,1
+							c0,0-19.5,6.8-14.7,31.8c0,0-3.7-1.8-1.8,6.1C24.9,46.8,28.2,46.3,28.2,46.3z"/>
+						<path style="fill:#cccbca;" d="M96.3,92c-4-10.7-10.5-12.7-15.6-13.6c-5.1-0.9-17.6-4-18.7-7c-0.4-1-0.5-2.9-0.5-5c-4.3,3.6-8.8,5.5-13.4,5.5
+							c-0.3,0-0.5,0-0.8,0c-5.2-0.2-9.5-2.8-12.4-5.2c0,2-0.1,3.8-0.5,4.8c-1.1,2.9-13.6,6.1-18.7,7C10.6,79.3,4.2,81.4,0.1,92
+							C-3.9,102.7,100.4,102.7,96.3,92z"/>
+					</g>
+					</svg>
+			</div>
+			
+			<div class="pictet--page__info--person">
+				<div class="pictet--page__info--person--names">
+					<span class="pictet--page__name">Tim Edmans</span>
+					<span class="pictet--page__role">UK Sales - Midlands</span>
+				</div>
+				<div class="pictet--page__info--person--contacts">
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--phone--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="33.4px" height="60px" viewBox="0 0 33.4 60" style="enable-background:new 0 0 33.4 60;"
+								 xml:space="preserve">
+							<defs>
+							</defs>
+							<path style="fill:#5a5a5a" d="M30.9,0H2.5C1.1,0,0,1.1,0,2.5v55C0,58.9,1.1,60,2.5,60h28.4c1.4,0,2.5-1.1,2.5-2.5v-55C33.4,1.1,32.3,0,30.9,0z M16.7,56.8
+								c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S17.8,56.8,16.7,56.8z M29.7,49.1H3.8V11.6h25.9C29.7,11.6,29.7,49.1,29.7,49.1z"/>
+							</svg>
+						</span>
+						<a class="pictet--page__link" href="tel:07515975473" target="_blank">07515 975 473</a>
+					</div>
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--email--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="88px" height="52px" viewBox="0 0 88 52" style="enable-background:new 0 0 88 52;" xml:space="preserve">
+							<defs>
+							</defs>
+							<g transform="translate(0,-952.36218)">
+								<path style="fill:#5a5a5a" d="M6,952.4c-0.6,0-1.2,0.1-1.8,0.3l36.9,34.5c1.7,1.6,4.2,1.6,5.9,0l36.8-34.5c-0.6-0.2-1.2-0.3-1.8-0.3H6z M1,955.1
+									c-0.6,0.9-1,2.1-1,3.3v40c0,1.2,0.4,2.3,1,3.2l24.3-23.8L1,955.1z M87,955.1l-24.3,22.8l24.3,23.8c0.6-0.9,1-2,1-3.2v-40
+									C88,957.1,87.6,956,87,955.1z M28.2,980.6L4.2,1004c0.6,0.2,1.2,0.3,1.8,0.3h76c0.6,0,1.3-0.1,1.8-0.3l-24-23.5L49.7,990
+									c-3.2,3-8.2,3-11.4,0L28.2,980.6L28.2,980.6z"/>
+							</g>
+							</svg>
+
+						</span>
+						<a href="mailto:tedmans@pictet.com" class="pictet--page__link" target="_blank">tedmans@pictet.com</a>
+					</div>
+				</div>
+			</div>
+		</li>
+
+	<!-- END -->
+
+	<!-- PERSON -->
+		<li class="pictet--page__item">
+			
+			<div class="pictet--page__svg--person">
+				<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+					<svg version="1.1"
+						 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+						 x="0px" y="0px" width="96.4px" height="100px" viewBox="0 0 96.4 100" style="enable-background:new 0 0 96.4 100;"
+						 xml:space="preserve">
+					<defs>
+					</defs>
+					<g>
+						<path style="fill:#cccbca;" d="M28.2,46.3c0,0,0.4,6.6,6.5,13.7v0c1.3,1.6,6.3,7.1,12.9,7.3c4.9,0.2,9.8-2.5,14.5-7.9l0,0c5.6-6.8,6-13.1,6-13.1
+							s3.3,0.6,5.1-7.3c1.8-7.9-1.8-6.1-1.8-6.1c4.8-25-14.7-31.8-14.7-31.8c-3.6-1.1-6.4-1.2-8.5-1c-2.1-0.2-5-0.1-8.5,1
+							c0,0-19.5,6.8-14.7,31.8c0,0-3.7-1.8-1.8,6.1C24.9,46.8,28.2,46.3,28.2,46.3z"/>
+						<path style="fill:#cccbca;" d="M96.3,92c-4-10.7-10.5-12.7-15.6-13.6c-5.1-0.9-17.6-4-18.7-7c-0.4-1-0.5-2.9-0.5-5c-4.3,3.6-8.8,5.5-13.4,5.5
+							c-0.3,0-0.5,0-0.8,0c-5.2-0.2-9.5-2.8-12.4-5.2c0,2-0.1,3.8-0.5,4.8c-1.1,2.9-13.6,6.1-18.7,7C10.6,79.3,4.2,81.4,0.1,92
+							C-3.9,102.7,100.4,102.7,96.3,92z"/>
+					</g>
+					</svg>
+			</div>
+			
+			<div class="pictet--page__info--person">
+				<div class="pictet--page__info--person--names">
+					<span class="pictet--page__name">Cheryl Stubbs</span>
+					<span class="pictet--page__role">Senior Sales Associate</span>
+				</div>
+				<div class="pictet--page__info--person--contacts">
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--phone--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="33.4px" height="60px" viewBox="0 0 33.4 60" style="enable-background:new 0 0 33.4 60;"
+								 xml:space="preserve">
+							<defs>
+							</defs>
+							<path style="fill:#5a5a5a" d="M30.9,0H2.5C1.1,0,0,1.1,0,2.5v55C0,58.9,1.1,60,2.5,60h28.4c1.4,0,2.5-1.1,2.5-2.5v-55C33.4,1.1,32.3,0,30.9,0z M16.7,56.8
+								c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S17.8,56.8,16.7,56.8z M29.7,49.1H3.8V11.6h25.9C29.7,11.6,29.7,49.1,29.7,49.1z"/>
+							</svg>
+						</span>
+						<a class="pictet--page__link" href="tel:02078475490" target="_blank">020 7847 5490</a>
+					</div>
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--email--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="88px" height="52px" viewBox="0 0 88 52" style="enable-background:new 0 0 88 52;" xml:space="preserve">
+							<defs>
+							</defs>
+							<g transform="translate(0,-952.36218)">
+								<path style="fill:#5a5a5a" d="M6,952.4c-0.6,0-1.2,0.1-1.8,0.3l36.9,34.5c1.7,1.6,4.2,1.6,5.9,0l36.8-34.5c-0.6-0.2-1.2-0.3-1.8-0.3H6z M1,955.1
+									c-0.6,0.9-1,2.1-1,3.3v40c0,1.2,0.4,2.3,1,3.2l24.3-23.8L1,955.1z M87,955.1l-24.3,22.8l24.3,23.8c0.6-0.9,1-2,1-3.2v-40
+									C88,957.1,87.6,956,87,955.1z M28.2,980.6L4.2,1004c0.6,0.2,1.2,0.3,1.8,0.3h76c0.6,0,1.3-0.1,1.8-0.3l-24-23.5L49.7,990
+									c-3.2,3-8.2,3-11.4,0L28.2,980.6L28.2,980.6z"/>
+							</g>
+							</svg>
+
+						</span>
+						<a href="mailto:cstubbs@pictet.com" class="pictet--page__link" target="_blank">cstubbs@pictet.com</a>
+					</div>
+				</div>
+			</div>
+		</li>
+
+	<!-- END -->
+
+	<!-- PERSON -->
+		<li class="pictet--page__item">
+			
+			<div class="pictet--page__svg--person">
+				<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+					<svg version="1.1"
+						 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+						 x="0px" y="0px" width="96.4px" height="100px" viewBox="0 0 96.4 100" style="enable-background:new 0 0 96.4 100;"
+						 xml:space="preserve">
+					<defs>
+					</defs>
+					<g>
+						<path style="fill:#cccbca;" d="M28.2,46.3c0,0,0.4,6.6,6.5,13.7v0c1.3,1.6,6.3,7.1,12.9,7.3c4.9,0.2,9.8-2.5,14.5-7.9l0,0c5.6-6.8,6-13.1,6-13.1
+							s3.3,0.6,5.1-7.3c1.8-7.9-1.8-6.1-1.8-6.1c4.8-25-14.7-31.8-14.7-31.8c-3.6-1.1-6.4-1.2-8.5-1c-2.1-0.2-5-0.1-8.5,1
+							c0,0-19.5,6.8-14.7,31.8c0,0-3.7-1.8-1.8,6.1C24.9,46.8,28.2,46.3,28.2,46.3z"/>
+						<path style="fill:#cccbca;" d="M96.3,92c-4-10.7-10.5-12.7-15.6-13.6c-5.1-0.9-17.6-4-18.7-7c-0.4-1-0.5-2.9-0.5-5c-4.3,3.6-8.8,5.5-13.4,5.5
+							c-0.3,0-0.5,0-0.8,0c-5.2-0.2-9.5-2.8-12.4-5.2c0,2-0.1,3.8-0.5,4.8c-1.1,2.9-13.6,6.1-18.7,7C10.6,79.3,4.2,81.4,0.1,92
+							C-3.9,102.7,100.4,102.7,96.3,92z"/>
+					</g>
+					</svg>
+			</div>
+			
+			<div class="pictet--page__info--person">
+				<div class="pictet--page__info--person--names">
+					<span class="pictet--page__name">Anya Thethy</span>
+					<span class="pictet--page__role">Marketing and Events Co-ordinator</span>
+				</div>
+				<div class="pictet--page__info--person--contacts">
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--phone--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="33.4px" height="60px" viewBox="0 0 33.4 60" style="enable-background:new 0 0 33.4 60;"
+								 xml:space="preserve">
+							<defs>
+							</defs>
+							<path style="fill:#5a5a5a" d="M30.9,0H2.5C1.1,0,0,1.1,0,2.5v55C0,58.9,1.1,60,2.5,60h28.4c1.4,0,2.5-1.1,2.5-2.5v-55C33.4,1.1,32.3,0,30.9,0z M16.7,56.8
+								c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S17.8,56.8,16.7,56.8z M29.7,49.1H3.8V11.6h25.9C29.7,11.6,29.7,49.1,29.7,49.1z"/>
+							</svg>
+						</span>
+						<a class="pictet--page__link" href="tel:02078476487" target="_blank">020 7847 6487</a>
+					</div>
+					<div class="pictet--page__info--person--phone">
+						<span class="pictet--page__info--person--email--icon">
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In  -->
+							<svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="88px" height="52px" viewBox="0 0 88 52" style="enable-background:new 0 0 88 52;" xml:space="preserve">
+							<defs>
+							</defs>
+							<g transform="translate(0,-952.36218)">
+								<path style="fill:#5a5a5a" d="M6,952.4c-0.6,0-1.2,0.1-1.8,0.3l36.9,34.5c1.7,1.6,4.2,1.6,5.9,0l36.8-34.5c-0.6-0.2-1.2-0.3-1.8-0.3H6z M1,955.1
+									c-0.6,0.9-1,2.1-1,3.3v40c0,1.2,0.4,2.3,1,3.2l24.3-23.8L1,955.1z M87,955.1l-24.3,22.8l24.3,23.8c0.6-0.9,1-2,1-3.2v-40
+									C88,957.1,87.6,956,87,955.1z M28.2,980.6L4.2,1004c0.6,0.2,1.2,0.3,1.8,0.3h76c0.6,0,1.3-0.1,1.8-0.3l-24-23.5L49.7,990
+									c-3.2,3-8.2,3-11.4,0L28.2,980.6L28.2,980.6z"/>
+							</g>
+							</svg>
+
+						</span>
+						<a href="mailto:athethy@pictet.com" class="pictet--page__link" target="_blank">athethy@pictet.com</a>
+					</div>
+				</div>
+			</div>
+		</li>
+
+	<!-- END -->
+
+
+	</ul>
+</div>
