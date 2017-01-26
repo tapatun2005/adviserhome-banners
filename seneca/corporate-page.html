@@ -1,0 +1,277 @@
+<style scoped type="text/css">
+	
+	.seneca__page * {
+		box-sizing: border-box;
+	}
+
+	.seneca__page {
+		max-width: 750px;
+		width:100%;
+		font-family:"Helvetica", "Arial", san-serif;
+	}
+
+	.seneca__logo img {
+		width: 100%;
+		max-width: 550px;	
+	}
+
+	.seneca__section {
+		margin-top: 40px;
+	}
+
+	.seneca__section__image img {
+		width:100%;
+	}
+
+	.seneca__section__title {
+		color: #702376;
+		padding: 20px 10px;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	.seneca__section__list {
+		list-style:none;
+		padding-left: 0;
+	}
+
+	.seneca__section__item {
+		margin: 20px 0 ;
+		position: relative;
+		padding-left: 50px;
+	}
+
+	.seneca__section__item:before {
+		content:"";
+		display: block;
+		position: absolute;
+		top:3px;
+		left:10px;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background:#702376;
+
+	}
+
+	.seneca__grey {
+		padding: 20px;
+		background: #eee;
+		margin-top: 40px;
+	}
+
+	.seneca__grey__title {
+		color: #702376;
+		padding: 15px 10px 35px;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	.seneca__flex__list {
+		list-style:none;
+		padding-left: 0px;
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  		display: -ms-flexbox;  /* TWEENER - IE 10 */
+  		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  		display: flex;
+  		flex-wrap:wrap;
+  		-webkit-flex-wrap: wrap;
+  		justify-content: space-around;
+  		-webkit-justify-content: space-around;
+	}
+
+	.seneca__flex__item {
+		color:#fff;
+		background: #702376;
+		width: 45%;
+		padding: 20px;
+		margin-bottom: 10px;
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  		display: -ms-flexbox;  /* TWEENER - IE 10 */
+  		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  		display: flex;
+  		align-items: center;
+  		-webkit-align-items: center;
+  		justify-content: center;
+  		-webkit-justify-content: center;
+  		flex-direction:column;
+  		-webkit-flex-direction:column;
+  		text-align:center;
+  		counter-increment: item;
+  		position: relative;
+	}
+
+	.seneca__flex__item:before {
+		content:counter(item);
+		display: block;
+		position: absolute;
+		top:0;
+		left:10px;
+		transform:translateY(-50%);
+		background: #702376;
+		padding: 3px 7px;
+		border: 2px solid #eee;
+	}
+
+	.seneca__note {
+		font-size: .8em;
+		font-style: italic;
+	}
+
+	.seneca__section__p {
+		padding: 10px;
+	}
+
+	.seneca__links {
+		list-style: none;
+		padding-left:0px;
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  		display: -ms-flexbox;  /* TWEENER - IE 10 */
+  		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  		display: flex;
+  		-webkit-flex-wrap:wrap;
+  		flex-wrap:wrap;
+  		-webkit-justify-content:space-between;
+  		justify-content:space-between;
+  		margin: 20px 0;
+	}
+
+	.seneca__link {
+		color:#fff;
+		width: 45%;
+		padding: 20px;
+		margin-bottom: 20px;
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  		display: -ms-flexbox;  /* TWEENER - IE 10 */
+  		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  		display: flex;
+  		align-items: center;
+  		-webkit-align-items: center;
+  		justify-content: center;
+  		-webkit-justify-content: center;
+  		flex-direction:column;
+  		-webkit-flex-direction:column;
+  		text-align:center;
+  		counter-increment: item;
+  		position: relative;
+  		text-decoration: none !important;
+  		font-weight: bold !important;
+  		border-radius: 10px;
+  		transition:background .2s ease-in-out;
+	}
+
+	.seneca__link:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top:7px;
+		width:100%;
+		height: 100%;
+		left:0;
+		border-radius: 10px;
+		z-index: -1;
+	}
+	.seneca__link:hover {
+		color:#fff !important;
+	}
+
+	.seneca__link--green {
+		background:#30797f;
+	}
+	.seneca__link--green:hover, 
+	.seneca__link--green:before {
+		background:#235d62;
+	}
+	.seneca__link--purple {
+		background: #702376;
+	}
+	.seneca__link--purple:hover, 
+	.seneca__link--purple:before {
+		background:#5a2261;
+	}
+
+	/*#702376*/
+
+
+</style>
+
+<div class="seneca__page">
+	
+	<div class="seneca__logo">
+		<img src="/cd-content/uploads/images/sneca-logo.png" alt="Seneca IM log">
+	</div>
+
+	<div class="seneca__section">
+		<div class="seneca__section__image">
+			<img src="/cd-content/uploads/images/seneca-section-1.jpg" alt="">
+		</div>
+		<div class="seneca__section__title">
+			Seneca IM – Searching wider for income
+		</div>
+		<ul class="seneca__section__list">
+			<li class="seneca__section__item">
+				Seneca IM searches wider and delivers diversified high income through a distinctive range of multi-asset value investment options
+			</li>
+			<li class="seneca__section__item">
+				Seneca IM are Multi-asset experts managing investments for clients of Professional Intermediaries since 2002
+			</li>
+			<li class="seneca__section__item">
+				 A knowledgeable well-resourced team, which has equity in the business and co-invests in the funds aligning their interests with investors
+			</li>
+		</ul>
+	</div>
+
+	<div class="seneca__grey">
+		<div class="seneca__grey__title">
+			Diversified Income Fund In brief
+		</div>
+		<ul class="seneca__flex__list">
+			<li class="seneca__flex__item">
+				<p>An income diversifier unlocking real income from multiple assets</p>
+			</li>
+			<li class="seneca__flex__item">
+				<p>Monthly income payments</p>
+			</li>
+			<li class="seneca__flex__item">
+				<p>Aim of 5% yield*</p>
+			</li>
+			<li class="seneca__flex__item">
+				<p>A retirement option in one fund</p>
+			</li>
+		</ul>
+		<span class="seneca__note">*The yield aim quoted is an estimate and not guaranteed.</span>
+	</div>
+
+	<div class="seneca__section">
+		<div class="seneca__section__image">
+			<img src="/cd-content/uploads/images/seneca-section-2.jpg" alt="">
+		</div>
+		<div class="seneca__section__title">
+			Seneca IM - Value for professional intermediaries
+		</div>
+		<p class="seneca__section__p">We know that advisers are always seeking quality income solutions.  The CF Seneca Diversified Income Fund is a multi-asset portfolio aiming to deliver a high and growing income with the potential to preserve the real value of invested capital. The fund has historically delivered a dividend yield of circa 5%*, with income now paid out on a monthly basis.</p>
+	</div>
+
+	<div class="seneca__section">
+		<div class="seneca__section__title">
+			A little more detail...
+		</div>
+		<div class="seneca__links">
+			<a href="http://senecaim.com/content/uploads/2015/10/CF_Seneca_Diversified_Income_Fund_Information_Sheet_Final.pdf" class="seneca__link seneca__link--green" target="_blank">
+				Risk Profile - DT Level 5 - Low to Medium Risk
+			</a>
+			<a href="http://senecaim.com/content/uploads/2016/09/Availability-Matrix-Professional-Institutional-July-2016.pdf" class="seneca__link seneca__link--green" target="_blank">
+				Platform Access
+			</a>
+			<a href="http://senecaim.com/content/uploads/2016/12/CF-Seneca-Diversified-Income-Fund-Factsheet-end-November-2016-FP16-213.pdf" class="seneca__link seneca__link--green" target="_blank">
+				December 2016 Factsheet 
+			</a>
+			<a href="http://senecaim.com/professional-intermediaries/cf-seneca-diversified-income-fund/" class="seneca__link seneca__link--purple" target="_blank">
+				More details from Seneca IM
+			</a>
+		</div>
+	</div>
+
+
+</div>
